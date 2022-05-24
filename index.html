@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -48,13 +48,13 @@
             <a href="#process">Процесс работы</a>
           </li>
           <li class="menu_item" href="#">
-            <a>Фотогалерея</a>
+            <a href="#gallery">Фотогалерея</a>
           </li>
           <li class="menu_item" href="#">
-            <a>Калькулятор услуг</a>
+            <a href="#calc">Калькулятор услуг</a>
           </li>
           <li class="menu_item" href="#">
-            <a>Отзывы</a>
+            <a href="#reviews">Отзывы</a>
           </li>
         </ul>
       </nav>
@@ -73,14 +73,20 @@
         </div>
         <div class="main_social">
           <ul class="social_items">
-            <li class="social_item">
-              <a href="#"><img src="./img/vk.svg" alt="vk"></a>
+            <li>
+              <a href="https://vk.com/po_occ">
+                <img src="./img/vkontakte.svg" alt="vk">
+              </a>
             </li>
-            <li class="social_item">
-              <a href="#"><img src="./img/inst.svg" alt="inst"></a>
+            <li>
+              <a href="https://www.instagram.com/askuzm/">
+                <img src="./img/inst.svg" alt="inst">
+              </a>
             </li>
-            <li class="social_item">
-              <a href="#"><img src="./img/telegram.svg" alt="tg"></a>
+            <li>
+              <a href="https://web.telegram.org/k/">
+                <img src="./img/telegram.svg" alt="tg">
+              </a>
             </li>
           </ul>
         </div>
@@ -109,7 +115,7 @@
         <div class="benefits_container">
           <img class="benefits_img" src="./img/money-bag.svg" alt="mony-bag">
           <h4 class="benefits_title">Скидки и акции</h4>
-          <p class="benefits_subtitle">Мы подготовили для Вас<br> много бонусов</p>
+          <p class="benefits_subtitle">Мы подготовили<br> для Вас<br> много бонусов</p>
         </div>
       </section>
 
@@ -179,10 +185,10 @@
               <div class="examples_choice_block">
                 <h4 class="example_choice_title">Монтаж потолков:</h4>
                 <ul class="example_choice_list">
-                  <li class="example_choice_item btn">Стандартные</li>
-                  <li class="example_choice_item">Многоуровневые</li>
-                  <li class="example_choice_item">Комбинированные</li>
-                  <li class="example_choice_item">С подсветкой</li>
+                  <li>Стандартные</li>
+                  <li>Многоуровневые</li>
+                  <li>Комбинированные</li>
+                  <li>С подсветкой</li>
                 </ul>
               </div>
               <div class="example_pagination_block">
@@ -245,10 +251,9 @@
           <div class="types_cost">
             От <span>30</span> бел.руб. за м2
           </div>
-          <div class="button_container">
-            <button class="btn">Оставить заявку</button>
-            <button class="submit_grey btn">Расчитать стоимость</button>
-          </div>
+            <div class="button_container">
+              <button class="btn">Оставить заявку</button>
+            </div>
         </div>
       </section>
 
@@ -265,7 +270,7 @@
           <ul class="process_list">
             <li class="process_item" style="background-image: url(img/process_block/1.png);">
               <h5>Получаем заявку<br> на замер</h5>
-              <p>Свяжитесь с нами удобным для Вас способом</p>
+              <p>Свяжитесь с нами<br> удобным<br> для Вас способом</p>
               <span>1</span>
             </li>
             <li class="process_item" style="background-image: url(img/process_block/2.png);">
@@ -314,9 +319,11 @@
         </div>
         <img src="./img/order_block/девушка.png" alt="девушка" class="order_women">
         <div class="lamp"></div>
+        <div class="lamp1"></div>
+        <div class="lamp2"></div>
       </section>
 
-      <section class="calc">
+      <section id="calc" class="calc">
         <div class="calc_container _container">
           <div class="about_title_block">
             <h3 class="about_title block_title">
@@ -384,7 +391,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <div class="gallery_container _container">
           <div class="about_title_block">
             <h3 class="about_title block_title">
@@ -394,147 +401,144 @@
               Фотогалерея работ
             </h4>
           </div>
+      </section>
 
-          <div class="triple_slider">
-
+      <section id="sales" class="sales">
+        <div class="sales_container _container">
+          <div class="about_title_block">
+            <h3 class="about_title block_title">
+              Наши акции
+            </h3>
+            <h4 class="title_repeat">
+              Наши акции
+            </h4>
           </div>
-
+          <p class="sales_low-text">Специальные предложения для Вас!</p>
+          <div class="sales_blocks">
+            <div class="sale_block_item">
+              <div class="sales_img" style="background-image: url(img/sales_block/Акция_Новоселы.png);"></div>
+              <div class="sales_info">
+                <h5>Для новосёлов скидка 15% на натяжные потолки!</h5>
+                <p>Более того - если вы постоянный клиент скидка может стать ещё выше!<br>
+                  Поспешите, предложение ограничено!</p>
+              </div>
+              <div class="label_sale">Акция</div>
+            </div>
+            <div class="sale_block_item">
+              <div class="sales_img" style="background-image: url(img/sales_block/ox7jx2Y.png);"></div>
+              <div class="sales_info">
+                <h5>При установке натяжного потолка<br> карниз в ПОДАРОК!</h5>
+                <p>Более того - если вы постоянный клиент скидка может стать ещё выше!<br>
+                  Поспешите, предложение ограничено!</p>
+              </div>
+              <div class="label_sale">Акция</div>
+            </div>
+          </div>
+          <p class="more">Показать еще</p>
         </div>
-  </div>
-  </div>
-  </section>
+        <img src="./img/sales_block/rule.png" alt="rule" class="rule_img">
+        <img src="./img/sales_block/pen.png" alt="pen" class="pen_img">
+      </section>
 
-  <section class="sales">
-    <div class="sales_container _container">
-      <div class="about_title_block">
-        <h3 class="about_title block_title">
-          Наши акции
-        </h3>
-        <h4 class="title_repeat">
-          Наши акции
-        </h4>
-      </div>
-      <div class="sales_blocks">
-        <div class="sale_block_item">
-          <div class="sales_img" style="background-image: url(img/sales_block/Акция_Новоселы.png);"></div>
-          <div class="sales_info">
-            <h5>Для новосёлов скидка 15% на натяжные потолки!</h5>
-            <p>Более того - если вы постоянный клиент скидка может стать ещё выше!<br>
-              Поспешите, предложение ограничено!</p>
+      <section id="reviews" class="reviews">
+        <div class="reviews_container _container">
+          <div class="about_title_block">
+            <h3 class="about_title block_title">
+              Наши отзывы
+            </h3>
+            <h4 class="title_repeat">
+              Наши отзывы
+            </h4>
           </div>
-          <div class="label_sale">Акция</div>
-        </div>
-        <div class="sale_block_item">
-          <div class="sales_img" style="background-image: url(img/sales_block/ox7jx2Y.png);"></div>
-          <div class="sales_info">
-            <h5>При установке натяжного потолка<br> карниз в ПОДАРОК!</h5>
-            <p>Более того - если вы постоянный клиент скидка может стать ещё выше!<br>
-              Поспешите, предложение ограничено!</p>
+          <div class="reviews_block">
+            <div class="reviews_item">
+              <div class="reviews_img">
+                <img src="img/reviews_block/woman.png" alt="woman">
+                <p>Татьяна, г.Гомель</p>
+              </div>
+              <div class="reviews_stars">
+                <img src="img/reviews_block/star.png" alt="star">
+                <img src="img/reviews_block/star.png" alt="star">
+                <img src="img/reviews_block/star.png" alt="star">
+                <img src="img/reviews_block/star.png" alt="star">
+                <img src="img/reviews_block/star.png" alt="star">
+              </div>
+              <p class="rewiews_text">
+                Среди всего разнообразия предложений остановилась на Feniks bel и не пожалела. На замер приехали на
+                следующий день после того, как оставила заявку, установили через неделю в удобную для меня дату. Работы
+                были
+                закончены за час, полтора, очень оперативно. Рекомендую!
+              </p>
+            </div>
+            <div class="reviews_item">
+              <div class="reviews_img">
+                <img src="img/reviews_block/man.png" alt="man">
+                <p>Валерий, г.Гомель</p>
+              </div>
+              <div class="reviews_stars">
+                <img src="img/reviews_block/star.png" alt="star">
+                <img src="img/reviews_block/star.png" alt="star">
+                <img src="img/reviews_block/star.png" alt="star">
+                <img src="img/reviews_block/star.png" alt="star">
+              </div>
+              <p class="rewiews_text">
+                Работа выполнена качественно, при условии, что у нас кривые стены и трубы отопления находятся под
+                потолком,
+                по поводу трубы нас проконсультировали и предложили отличный вариант, как можно её скрыть.
+              </p>
+            </div>
           </div>
-          <div class="label_sale">Акция</div>
         </div>
-      </div>
-      <p class="more">Показать еще</p>
-    </div>
-    <img src="./img/sales_block/rule.png" alt="rule" class="rule_img">
-    <img src="./img/sales_block/pen.png" alt="pen" class="pen_img">
-  </section>
+      </section>
 
-  <section class="reviews">
-    <div class="reviews_container _container">
-      <div class="about_title_block">
-        <h3 class="about_title block_title">
-          Наши отзывы
-        </h3>
-        <h4 class="title_repeat">
-          Наши отзывы
-        </h4>
-      </div>
-      <div class="reviews_block">
-        <div class="reviews_item">
-          <div class="reviews_img">
-            <img src="img/reviews_block/woman.png" alt="woman">
-            <p>Татьяна, г.Гомель</p>
-          </div>
-          <div class="reviews_stars">
-            <img src="img/reviews_block/star.png" alt="star">
-            <img src="img/reviews_block/star.png" alt="star">
-            <img src="img/reviews_block/star.png" alt="star">
-            <img src="img/reviews_block/star.png" alt="star">
-            <img src="img/reviews_block/star.png" alt="star">
-          </div>
-          <p class="rewiews_text">
-            Среди всего разнообразия предложений остановилась на Feniks bel и не пожалела. На замер приехали на
-            следующий день после того, как оставила заявку, установили через неделю в удобную для меня дату. Работы были
-            закончены за час, полтора, очень оперативно. Рекомендую!
-          </p>
-        </div>
-        <div class="reviews_item">
-          <div class="reviews_img">
-            <img src="img/reviews_block/man.png" alt="man">
-            <p>Валерий, г.Гомель</p>
-          </div>
-          <div class="reviews_stars">
-            <img src="img/reviews_block/star.png" alt="star">
-            <img src="img/reviews_block/star.png" alt="star">
-            <img src="img/reviews_block/star.png" alt="star">
-            <img src="img/reviews_block/star.png" alt="star">
-          </div>
-          <p class="rewiews_text">
-            Работа выполнена качественно, при условии, что у нас кривые стены и трубы отопления находятся под потолком,
-            по поводу трубы нас проконсультировали и предложили отличный вариант, как можно её скрыть.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </main>
 
-  </main>
-  <footer class="footer">
-    <div class="footer_container _container">
-      <div class="footer_contacts">
-        <a href="#" class="header_logo">
-          <img class="logo_img" src="img/Vector.svg" alt="logo">
-          <p class="logo_title">Feniks bel</p>
-        </a>
-        <p class="footer_time-work">Время работы: 8.00 - 22.00</p>
-        <a href="tel:+375445676269" class="footer_contact f_phone">+ 375 (29) 111 - 35 - 35</a>
-        <a href="mailto:alexandr.taner@gmail.com" class="footer_contact f_mail">andrypisyn@gmail.com</a>
-        <p class="footer_contact f_adress">г. Гомель, ул.Говноедова 69</p>
+    <footer class="footer">
+      <div class="footer_container _container">
+        <div class="footer_contacts">
+          <a href="#" class="header_logo">
+            <img class="logo_img" src="img/Vector.svg" alt="logo">
+            <p class="logo_title">Feniks bel</p>
+          </a>
+          <p class="footer_time-work">Время работы: 8.00 - 22.00</p>
+          <a href="tel:+375445676269" class="footer_contact f_phone">+ 375 (29) 111 - 35 - 35</a>
+          <a href="mailto:alexandr.taner@gmail.com" class="footer_contact f_mail">andrypisyn@gmail.com</a>
+          <p class="footer_contact f_adress">г. Гомель, ул.Говноедова 69</p>
+        </div>
+        <div class="footer_order">
+          <h4 class="order_title">Свяжитесь с нами</h4>
+          <p class="order_sibtitle">Мы перезвоним Вам в течение 10 минут</p>
+          <form class="order_inputs">
+            <input placeholder="Ваше имя" type="text" class="input_order">
+            <input placeholder="Номер телефона" type="tel" class="input_order">
+            <div class="input_agree">
+              <input name="agree" value="Я согласен на обработку персональных данных" type="checkbox"
+                class="order_chekbox">
+              <label for="agree">Я согласен на обработку персональных<br> данных</label>
+            </div>
+          </form>
+          <button class="btn">Оставить заявку</button>
+        </div>
+        <div class="footer_socnet">
+          <a href="https://vk.com/po_occ" target="_blank">
+            <img src="img/vkontakte.svg" alt="vk">
+          </a>
+          <a href="https://www.instagram.com/askuzm/" target="_blank">
+            <img src="img/inst.svg" alt="inst">
+          </a>
+          <a href="https://web.telegram.org/k/" target="_blank">
+            <img src="img/telegram.svg" alt="telegram">
+          </a>
+        </div>
       </div>
-      <div class="footer_order">
-        <h4 class="order_title">Свяжитесь с нами</h4>
-        <p class="order_sibtitle">Мы перезвоним Вам в течение 10 минут</p>
-        <form class="order_inputs">
-          <input placeholder="Ваше имя" type="text" class="input_order">
-          <input placeholder="Номер телефона" type="tel" class="input_order">
-          <div class="input_agree">
-            <input name="agree" value="Я согласен на обработку персональных данных" type="checkbox"
-              class="order_chekbox">
-            <label for="agree">Я согласен на обработку персональных<br> данных</label>
-          </div>
-        </form>
-        <button class="btn">Оставить заявку</button>
-      </div>
-      <div class="footer_socnet">
-        <a href="https://vk.com/po_occ" target="_blank">
-          <img src="img/vkontakte.svg" alt="vk">
-        </a>
-        <a href="https://www.instagram.com/askuzm/" target="_blank">
-          <img src="img/inst.svg" alt="inst">
-        </a>
-        <a href="https://web.telegram.org/k/" target="_blank">
-          <img src="img/telegram.svg" alt="telegram">
-        </a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <button class="scrollTop">
       <div class="scrollArr">
         <img src="img/up-arrow.svg" alt="arrowUp">
       </div>
     </button>
+  </div>
 
 </body>
 
