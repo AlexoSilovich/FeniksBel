@@ -49,6 +49,8 @@ function run() {
 
 const scrollTop = document.querySelector('.scrollTop')
 
+scrollTop.style.opacity = 0
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 1200) {
     scrollTop.style.opacity = 1
@@ -61,7 +63,8 @@ scrollTop.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 })
 
-// =======================================================
+
+// CHANGE SLIDER==========================================
 
 
 
