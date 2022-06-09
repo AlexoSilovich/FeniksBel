@@ -1329,12 +1329,12 @@ ul,p,h1,h2,h3,h4,h5 {
   width: 385.17px;
   height: 371.94px;
   position: absolute;
-  top: -230px;
+  top: -340px;
   right: 0;
 }
 .pen_img {
   position: absolute;
-  top: -240px;
+  top: -375px;
   right: 0px;
 }
 
@@ -1537,6 +1537,12 @@ ul,p,h1,h2,h3,h4,h5 {
     line-height: 25px;
     text-align: left;
     margin-bottom: 90px;
+  }
+  .rule_img {
+    display: none;
+  }
+  .pen_img {
+    display: none;
   }
 }
 
