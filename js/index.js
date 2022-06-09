@@ -49,11 +49,13 @@ function run() {
 
 const scrollTop = document.querySelector('.scrollTop')
 
-scrollTop.style.opacity = 0
+document.addEventListener("DOMContentLoaded", () => {
+  scrollTop.style.opacity = 0
+})
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 1200) {
-    scrollTop.style.opacity = 1
+    scrollTop.style.opacity = 0.6
   } else {
     scrollTop.style.opacity = 0
   }
@@ -62,6 +64,23 @@ window.addEventListener('scroll', () => {
 scrollTop.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 })
+
+// BURGER MENU============================================
+
+const burger = document.querySelector('.burger');
+const navbar = document.querySelector('.navbar');
+const navLink = document.querySelectorAll('.nav-link');
+
+burger.addEventListener('click', () => {
+    navbar.classList.toggle('nav-open');
+    burger.classList.toggle('burger-open');
+    navLink.forEach(link => {
+        link.classList.toggle('nav-link-open');
+    })
+    navLink.forEach(item => {item.addEventListener('click', () => {
+      navbar.classList.remove('nav-open')
+    })})
+});
 
 
 // CHANGE SLIDER==========================================
