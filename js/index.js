@@ -13,37 +13,37 @@ const img = document.querySelectorAll('#imgs img')
 const upBtn = document.querySelector(".scrollBtn");
 
 
-let ind = 1
+// let ind = 1
 
-choice.innerText = `${ind}/${img.length}`
+// choice.innerText = `${ind}/${img.length}`
 
-rightBtn.addEventListener('click', () => {
-  ind++
-  changeImg()
-  reserInterval()
-})
+// rightBtn.addEventListener('click', () => {
+//   ind++
+//   changeImg()
+//   reserInterval()
+// })
 
-leftBtn.addEventListener('click', () => {
-  ind--
-  changeImg()
-  reserInterval()
-})
+// leftBtn.addEventListener('click', () => {
+//   ind--
+//   changeImg()
+//   reserInterval()
+// })
 
-function changeImg() {
-  if (ind > img.length) {
-    ind = 1
-  } else if (ind < 1) {
-    ind = img.length
-  }
-  imgs.style.transform = `translateX(${-ind * 500}px)`
-  choice.innerHTML = `${ind}/${img.length}`
+// function changeImg() {
+//   if (ind > img.length) {
+//     ind = 1
+//   } else if (ind < 1) {
+//     ind = img.length
+//   }
+//   imgs.style.transform = `translateX(${-ind * 500}px)`
+//   choice.innerHTML = `${ind}/${img.length}`
   
-}
+// }
 
-function run() {
-  ind++
-  changeImg()
-}
+// function run() {
+//   ind++
+//   changeImg()
+// }
 
 // SCROLL================================================
 
@@ -85,7 +85,19 @@ burger.addEventListener('click', () => {
 
 // CHANGE SLIDER==========================================
 
-
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 
 

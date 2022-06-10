@@ -38,12 +38,12 @@ class Carousel {
 
   // Construct the carousel navigation
   // setNav() {
-    // galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
+  //   galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
 
-    // this.carouselArray.forEach(item => {
-    //   const nav = galleryContainer.lastElementChild;
-    //   nav.appendChild(document.createElement('li'));
-    // }); 
+  //   this.carouselArray.forEach(item => {
+  //     const nav = galleryContainer.lastElementChild;
+  //     nav.appendChild(document.createElement('li'));
+  //   }); 
   // }
 
   // Construct the carousel controls
@@ -51,10 +51,10 @@ class Carousel {
     this.carouselControls.forEach(control => {
       galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
 
-      document.querySelector(`.gallery-controls-${control}`).innerText = control;
+      document.querySelector(`.gallery-controls-${control}`).innerText = ' ';
     });
   }
- 
+
   // Add a click event listener to trigger setCurrentState method to rearrange carousel
   useControls() {
     const triggers = [...galleryControlsContainer.childNodes];
