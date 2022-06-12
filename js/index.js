@@ -99,8 +99,25 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// ORDER WINDOW============================================
+
+const orderWindow = document.querySelector('.main_order')
+const closeWindow = document.querySelector('.close_order')
+const orderBtn = document.querySelectorAll('.open_order')
 
 
+orderBtn.forEach(item => {item.addEventListener('click', () => {
+  orderWindow.style.opacity = '1'
+  orderWindow.style.zIndex = '100'
+  orderWindow.style.transform = 'translateY(0)'
+})})
+
+closeWindow.addEventListener('click', () => {
+  orderWindow.style.opacity = '0'
+  orderWindow.style.transform = 'translateY(-100%)'
+})
+
+// =========================================
 // let interval = setInterval(run,4000)
 
 // function reserInterval(){
