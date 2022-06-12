@@ -1552,14 +1552,18 @@ ul,p,h1,h2,h3,h4,h5 {
 }
 .close_order {
   position: absolute;
-  top: -10%;
+  width: 20px;
+  height: 20px;
+  top: -7%;
   right: -4%;
-  font-size: 35px;
   font-weight: 900;
   background: transparent;
   border: none;
-  border-radius: 50%;
   cursor: pointer;
+  padding: 0;
+}
+.close_order img {
+  width: 100%;
 }
 
 /* ADAPTIV=============================== */
@@ -1635,6 +1639,9 @@ ul,p,h1,h2,h3,h4,h5 {
   .main_order {
     padding: 20px 10px;
   }
+  .main_order_container {
+    padding-top: 15px;
+  }
   .main_order_container .order_title {
     font-size: 23px;
     line-height: 25px;
@@ -1649,6 +1656,10 @@ ul,p,h1,h2,h3,h4,h5 {
   }
   .label_sale {
     left: -0.5%;
+  }
+  .close_order {
+    top: -2%;
+    right: 1%;
   }
 }
 
@@ -1749,6 +1760,10 @@ ul,p,h1,h2,h3,h4,h5 {
     padding: 10px;
     bottom: 30px;
     right: 30px;
+  }
+  .close_order {
+    width: 15px;
+    height: 15px;
   }
 
 /* ================================ */
@@ -2468,6 +2483,10 @@ ul,p,h1,h2,h3,h4,h5 {
   .footer_contacts {
     margin-right: 0;
   }
+  .close_order {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 @media(max-width: 335px) {
@@ -2475,6 +2494,12 @@ ul,p,h1,h2,h3,h4,h5 {
     width: 85%;
     top: 15%;
     left: 7%;
+  }
+  .close_order {
+    width: 15px;
+    height: 15px;
+    top: -4%;
+    right: 1%;
   }
 }
 
