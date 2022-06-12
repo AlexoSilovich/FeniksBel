@@ -82,7 +82,7 @@
         <div class="main_description">
           <h1 class="header_main_title">Идеальные натяжные потолки<br> для вашей квартиры</h1>
           <p class="header_main_subtitle">Бесплатный замер в день обращения</p>
-          <button class="open_order btn">Оставить заявку</button>
+          <button type="submit" class="open_order btn">Оставить заявку</button>
         </div>
         <div class="woman_block">
           <img src="img/header_block/man.png" alt="women">
@@ -220,7 +220,7 @@
               </div>
             </div>
             <img src="./img/скребок.png" alt="скребок" class="skrebok">
-            <button class="open_order btn">Оставить заявку</button>
+            <button type="submit" class="open_order btn">Оставить заявку</button>
           </div>
         </div>
       </section>
@@ -273,7 +273,7 @@
             От <span>30</span> бел.руб. за м2
           </div>
           <div class="button_container">
-            <button class="open_order btn">Оставить заявку</button>
+            <button type="submit" class="open_order btn">Оставить заявку</button>
           </div>
         </div>
       </section>
@@ -327,16 +327,16 @@
         <div class="order_container">
           <h4 class="order_title">Закажи звонок прямо сейчас<br> и получи потолочные светильники в подарок!</h4>
           <p class="order_sibtitle">Мы перезвоним Вам в течение 10 минут</p>
-          <form class="order_inputs">
-            <input placeholder="Ваше имя" type="text" class="input_order">
-            <input placeholder="Номер телефона" type="tel" class="input_order">
+          <form id="tg" class="order_inputs">
+            <input name="name" placeholder="Ваше имя" type="text" class="input_order">
+            <input name="tel" placeholder="Номер телефона" type="tel" class="input_order">
             <div class="input_agree">
               <input name="agree" value="Я согласен на обработку персональных данных" type="checkbox"
                 class="order_chekbox">
               <label for="agree">Я согласен на обработку персональных<br> данных</label>
             </div>
+            <button type="submit" class="btn">Оставить заявку</button>
           </form>
-          <button class="btn">Оставить заявку</button>
         </div>
         <img src="./img/order_block/девушка.png" alt="девушка" class="order_women">
         <div class="lamp"></div>
@@ -474,16 +474,16 @@
         <div class="footer_order">
           <h4 class="order_title">Свяжитесь с нами</h4>
           <p class="order_sibtitle">Мы перезвоним Вам в течение 10 минут</p>
-          <form class="order_inputs">
-            <input placeholder="Ваше имя" type="text" class="input_order">
-            <input placeholder="Номер телефона" type="tel" class="input_order">
+          <form id="tg" class="order_inputs">
+            <input name="name" placeholder="Ваше имя" type="text" class="input_order">
+            <input name="tel" placeholder="Номер телефона" type="tel" class="input_order">
             <div class="input_agree">
               <input name="agree" value="Я согласен на обработку персональных данных" type="checkbox"
                 class="order_chekbox">
               <label for="agree">Я согласен на обработку персональных<br> данных</label>
             </div>
+            <button type="submit" class="btn">Оставить заявку</button>
           </form>
-          <button class="btn">Оставить заявку</button>
         </div>
         <div class="footer_socnet">
           <a href="https://vk.com/po_occ" target="_blank">
@@ -503,16 +503,16 @@
       <div class="main_order_container">
         <h4 class="order_title">Закажи звонок прямо сейчас<br> и получи потолочные светильники в подарок!</h4>
         <p class="order_sibtitle">Мы перезвоним Вам в течение 10 минут</p>
-        <form class="order_inputs">
-          <input placeholder="Ваше имя" type="text" class="input_order">
-          <input placeholder="Номер телефона" type="tel" class="input_order">
+        <form id="tg" class="order_inputs">
+          <input name="name" placeholder="Ваше имя" type="text" class="input_order">
+          <input name="tel" placeholder="Номер телефона" type="tel" class="input_order">
           <div class="input_agree">
             <input name="agree" value="Я согласен на обработку персональных данных" type="checkbox"
               class="order_chekbox">
             <label for="agree">Я согласен на обработку персональных<br> данных</label>
           </div>
+          <button type="submit" class="btn">Оставить заявку</button>
         </form>
-        <button class="btn">Оставить заявку</button>
         <button class="close_order">
           <img src="img/closeWindow.svg" alt="close">
         </button>
@@ -529,7 +529,9 @@
 </body>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/formSubmission.js"></script>
 
 </html>
