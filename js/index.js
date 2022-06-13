@@ -110,6 +110,12 @@ orderBtn.forEach(item => {item.addEventListener('click', () => {
   orderWindow.style.opacity = '1'
   orderWindow.style.zIndex = '100'
   orderWindow.style.transform = 'translateY(0)'
+  if(orderWindow.style.fontSize === '140%') {
+    setTimeout(() => {
+      orderWindow.style.opacity = '0'
+      orderWindow.style.transform = 'translateY(-100%)'
+    },2000)
+  }
 })})
 
 closeWindow.addEventListener('click', () => {
