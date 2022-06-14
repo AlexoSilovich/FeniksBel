@@ -176,12 +176,21 @@
           </div>
           <div class="choice_menu">
             <ul class="choice_menu_list">
-              <li class="choice_menu_item">Натяжные потолки</li>
-              <li class="choice_menu_item">Потолочные светильники</li>
-              <li class="choice_menu_item">Карнизы и плинтуса</li>
+              <li class="choice_menu_item">
+                <a class="change_link" href="servise/celling.html">Натяжные потолки</a>
+              </li>
+              <li class="choice_menu_item">
+                <a class="change_link" href="servise/lamps.html">Потолочные светильники</a>
+              </li>
+              <li class="choice_menu_item">
+                <a class="change_link" href="servise/cornices.html">Карнизы и плинтуса</a>
+              </li>
             </ul>
+            <div class="loader2">
+              <img src="img/loader.gif" alt="loading">
+            </div>
           </div>
-          <div class="services_examples">
+          <div id="change_slider" class="services_examples">
             <div class="services_examples_container">
               <div class="examples_slider_block">
                 <!-- Swiper -->
@@ -236,50 +245,55 @@
               Виды натяжных потолков
             </h4>
           </div>
+          <div class="loader">
+            <img src="./img/loader.gif" alt="loading">
+          </div>
           <div class="choice_menu">
             <ul class="choice_menu_list _container">
               <li class="choice_menu_item">
-                <a href="index.html">Матовые</a>
+                <a class="link" href="/">Матовые</a>
               </li>
               <li class="choice_menu_item">
-                <a href="glossy.html">Глянцевые</a>
+                <a class="link" href="types/glossy.html">Глянцевые</a>
               </li>
               <li class="choice_menu_item">
-                <a href="satin.html">Сатиновые</a>
+                <a class="link" href="types/satin.html">Сатиновые</a>
               </li>
               <li class="choice_menu_item">
-                <a href="tissue.html">Тканевые</a>
+                <a class="link" href="types/tissue.html">Тканевые</a>
               </li>
             </ul>
           </div>
-          <div class="types_descr_block">
-            <div class="types_img">
-              <img src="img/types_block/types_photo.png" alt="celling">
-              <div class="bestseller">Хит<br>продаж</div>
-              <span class="dot_one" data-title="текст номер 1"></span>
-              <span class="dot_two" data-title="текст номер 2"></span>
-              <span class="dot_three" data-title="При установке потолка
-              можно варьировать 
-              высоту каркаса для 
-              маскировки заметного
-              перепада высоты
-              противоположных стен"></span>
+          <div id="change_types" class="change_types_wrapper">
+            <div class="types_descr_block">
+              <div class="types_img">
+                <img src="img/types_block/types_photo.png" alt="celling">
+                <div class="bestseller">Хит<br>продаж</div>
+                <span class="dot_one" data-title="текст номер 1"></span>
+                <span class="dot_two" data-title="текст номер 2"></span>
+                <span class="dot_three" data-title="При установке потолка
+                можно варьировать 
+                высоту каркаса для 
+                маскировки заметного
+                перепада высоты
+                противоположных стен"></span>
+              </div>
+              <div class="types_descr">
+                <h4>Матовые натяжные потолки</h4>
+                <p>Идеальное покрытие для потолочной поверхности. Они изготавливаются из ПВХ пленки, имеют поверхность без
+                  бликов и отражения. В нем не отражается свет и окружающие предметы.
+                  <br><br>
+                  Матовые полотна прекрасно подойдут для “спокойных” интерьеров. Здесь акцент идет не на потолок, а на
+                  другие элементы в помещении – люстру, стены, мебель, картины, зеркала и другое.
+                  <br><br>
+                  Монтировать натяжной потолок можно в любых помещениях, от жилых комнат до офисов и бассейнов с
+                  повышенной влажностью.
+                </p>
+              </div>
             </div>
-            <div class="types_descr">
-              <h4>Матовые натяжные потолки</h4>
-              <p>Идеальное покрытие для потолочной поверхности. Они изготавливаются из ПВХ пленки, имеют поверхность без
-                бликов и отражения. В нем не отражается свет и окружающие предметы.
-                <br><br>
-                Матовые полотна прекрасно подойдут для “спокойных” интерьеров. Здесь акцент идет не на потолок, а на
-                другие элементы в помещении – люстру, стены, мебель, картины, зеркала и другое.
-                <br><br>
-                Монтировать натяжной потолок можно в любых помещениях, от жилых комнат до офисов и бассейнов с
-                повышенной влажностью.
-              </p>
+            <div class="types_cost">
+              От <span>30</span> бел.руб. за м2
             </div>
-          </div>
-          <div class="types_cost">
-            От <span>30</span> бел.руб. за м2
           </div>
           <div class="button_container">
             <button type="submit" class="open_order btn">Оставить заявку</button>
@@ -539,7 +553,10 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 <script src="js/index.js"></script>
+<script src="js/ajax.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/formSubmission.js"></script>
 
