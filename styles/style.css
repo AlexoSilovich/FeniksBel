@@ -552,14 +552,14 @@ ul,p,h1,h2,h3,h4,h5 {
   height: 100vh;
   width: 100%;
   background-color: rgba(202, 160, 71, 0.9);
-  -webkit-clip-path: circle(0px at 0 0px);
-          clip-path: circle(0px at 0 0px);
+  -webkit-clip-path: circle(0px at 100% 0px);
+          clip-path: circle(0px at 100% 0px);
   transition: 0.5s ease all;
 }
 .navbar .nav-links {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -585,7 +585,8 @@ ul,p,h1,h2,h3,h4,h5 {
 .navbar .nav-links li a {
   text-decoration: none;
   color: #2a3255;
-  font-size: 2.4rem;
+  font-size: 28px;
+  font-weight: 600;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1565,7 +1566,7 @@ z-index: 2;
 }
 
 .footer_socnet {
-  margin-left: 53px;
+  margin-left: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1767,7 +1768,7 @@ z-index: 2;
   }
 }
 
-@media(max-width: 758px) {
+@media(max-width: 768px) {
   .block_title {
     position: absolute;
     top: -13px;
@@ -1829,6 +1830,9 @@ z-index: 2;
   .close_order {
     width: 15px;
     height: 15px;
+  }
+  .button_container {
+    margin-bottom: 40px;
   }
 
 /* ================================ */
@@ -2014,9 +2018,10 @@ z-index: 2;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 0;
 }
 .services_examples_container {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2024,6 +2029,7 @@ z-index: 2;
   background: transparent;
   box-shadow: none;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .examples_slider_block {
@@ -2082,8 +2088,8 @@ z-index: 2;
 }
 
 .types_img img {
-  width: 369px;
-  height: 267px;
+  width: 100%;
+  height: 100%;
   border-radius: 3px;
 }
 .bestseller {
@@ -2464,7 +2470,11 @@ z-index: 2;
     font-size: 8px;
   }
   .gallery-container {
-    height: 240px;
+    height: 250px;
+  }
+  .process_item {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -2516,10 +2526,6 @@ z-index: 2;
     display: none;
   }
 
-  .types_block {
-    margin-top: 50px;
-  }
-
   .block_title {
     font-size: 18px;
   }
@@ -2555,13 +2561,19 @@ z-index: 2;
     width: 15px;
     height: 15px;
   }
+  .about_description_img {
+    display: none;
+  }
 }
 
-@media(max-width: 335px) {
+@media(max-width: 345px) {
   .main_order {
     width: 85%;
     top: 15%;
     left: 7%;
+  }
+  .benefits_container {
+    width: 100%;
   }
   .close_order {
     width: 15px;
