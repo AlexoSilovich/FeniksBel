@@ -886,6 +886,7 @@ z-index: 2;
 }
 .types_img {
   position: relative;
+  width: 100%;
   z-index: -10px;
   margin-bottom: 30px;
 }
