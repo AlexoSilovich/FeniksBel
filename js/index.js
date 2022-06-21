@@ -21,6 +21,9 @@ window.addEventListener('scroll', () => {
   } else {
     scrollTop.style.opacity = 0
   }
+  if (window.scrollY+1 >= document.documentElement.scrollHeight-document.documentElement.clientHeight) {
+    scrollTop.style.opacity = 0
+  }
 })
 
 scrollTop.addEventListener('click', () => {
